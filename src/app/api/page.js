@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <h1>Welcome to the Video Creation App</h1>
       <Link href="/create-video">
-        Create a Video
+        <a>Create a Video</a>
       </Link>
     </div>
   );
