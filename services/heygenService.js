@@ -47,9 +47,7 @@ export const createVideo = async (prompt, avatarId, voiceId) => {
 
 export const checkVideoGenerationStatus = async (videoId) => {
   try {
-    // const url = `${heygenBaseUrl}/v1/video_status.get?video_id=${videoId}`;
-
-    const url = `https://api.heygen.com/v1/video_status.get?video_id=779fdf39ad704a9d99fa3a37043ce231`;
+    const url = `${heygenBaseUrl}/v1/video_status.get?video_id=${videoId}`;
     console.log('Request URL:', url);
     const response = await axios.get(url, {
       headers: {
@@ -66,7 +64,7 @@ export const checkVideoGenerationStatus = async (videoId) => {
 
 export const listSupportedLanguages = async () => {
   try {
-    const url = `https://api.heygen.com/v2/video_translate/target_languages`;
+    const url = `${heygenBaseUrl}/v2/video_translate/target_languages`;
     console.log('Request URL:', url);
     const response = await axios.get(url, {
       headers: {
