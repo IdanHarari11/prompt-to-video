@@ -7,7 +7,7 @@ export default function VoiceSelector({ setVoiceId }) {
   useEffect(() => {
     const fetchVoices = async () => {
       try {
-        const response = await axios.get('/api/voices');
+        const response = await axios.get('/api/heygen/voices');
         setVoices(response?.data?.voices);
       } catch (error) {
         console.error('Error fetching voices:', error);

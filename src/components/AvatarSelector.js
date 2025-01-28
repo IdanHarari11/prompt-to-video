@@ -7,7 +7,7 @@ export default function AvatarSelector({ setAvatarId }) {
   useEffect(() => {
     const fetchAvatars = async () => {
       try {
-        const response = await axios.get(`/api/avatars`);
+        const response = await axios.get(`/api/heygen/avatars`);
         setAvatars(response?.data);
       } catch (error) {
         console.error('Error fetching avatars:', error);
