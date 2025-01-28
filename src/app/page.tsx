@@ -7,6 +7,9 @@ export default function Home() {
       <Link href="/create-video">
         Create a Video
       </Link>
+      <Link href="/create-pictures">
+        Create a pictures
+      </Link>
     </div>
   );
 }

@@ -17,7 +17,7 @@ export default function CreateVideoPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/videos', {
+      const response = await axios.post('/api/heygen/videos', {
         prompt,
         avatarId,
         voiceId

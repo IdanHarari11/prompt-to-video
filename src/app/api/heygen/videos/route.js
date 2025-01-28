@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createVideo } from '../../../../services/heygenService';
+import { createVideo } from '../../../../../services/heygenService';
 
 export async function POST(request) {
   const { prompt, avatarId, voiceId } = await request.json();
